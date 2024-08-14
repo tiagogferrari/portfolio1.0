@@ -1,22 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
 #navbar {
     display: flex;
+    background-color: white !important;
+    border-bottom: 5px double black;
+    width: calc(100% - 60px); /* Deixa 20px de espaço em cada lado */
+    margin: 0 auto;
 }
 
 #container {
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Alinha os itens nas extremidades */
-    align-items: center; /* Centraliza verticalmente */
+    justify-content: center;
+    align-items: center;
     margin: 0px 40px 0px 40px;
     padding: 0px;
 }
 
-.navbar-logos {
-    display: flex;
-    gap: 15px;
-}
-
-#logo {
-    margin: 0 10px;
-    cursor: pointer;
+#dateTime {
+    font-family: "Old Standard TT", serif;
+    font-weight: 700;
+    font-style: normal;
 }

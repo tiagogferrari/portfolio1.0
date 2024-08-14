@@ -1,22 +1,74 @@
-p#name{ 
-  font-size: 100px;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+p#name {
+  text-align: center;
+  font-size: 120px;
+  margin-top: 50px;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p#function {
+  font-size: 50px;
+  margin: -40px 0px 0px 0px;
+  text-align: center;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.profile {
+  display: flex;
+  justify-content: center; /* Centraliza as colunas */
+  align-items: center;
+  height: calc(100vh - 60px);
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: center;
+  height: 100%;
+  margin-right: 20px; /* Ajuste o valor conforme necessário */
+}
+
+.profile-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  height: 100%;
+  margin-left: 100px; /* Ajuste o valor conforme necessário */
+}
+
+#projects {
   margin: 0px;
+  height: 100vh;
+  background-color: black;
 }
 
-p#function{
-  font-size: 60px;
-  margin: -30px 0px 0px 0px;
+#projButton {
+  font-size: 20px;
+  width: 300px;
+  height: 50px;
+  border-radius: 0;
+  margin: 20px 0 0 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-p#location{
-  font-size: 40px;
-  margin: 0px;
+#navbarLogos {
+  display: flex;
+  gap: 15px;
 }
 
-.profile{
-  margin: 100px;
-}
-
-#buttonMessage {
-  margin-top: 20px;
+#logo {
+  margin: 0 10px;
+  cursor: pointer;
 }
