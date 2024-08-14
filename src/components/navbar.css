@@ -1,0 +1,22 @@
+#navbar {
+    display: flex;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Alinha os itens nas extremidades */
+    align-items: center; /* Centraliza verticalmente */
+    margin: 0px 40px 0px 40px;
+    padding: 0px;
+}
+
+.navbar-logos {
+    display: flex;
+    gap: 15px;
+}
+
+#logo {
+    margin: 0 10px;
+    cursor: pointer;
+}
