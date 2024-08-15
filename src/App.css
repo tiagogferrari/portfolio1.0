@@ -4,16 +4,16 @@
 
 p#name {
   text-align: center;
-  font-size: 120px;
-  margin-top: 50px;
+  font-size: 7vw;
+  margin-top: 5vh;
   font-family: "Old Standard TT", serif;
   font-weight: 400;
   font-style: normal;
 }
 
 p#function {
-  font-size: 50px;
-  margin: -40px 0px 0px 0px;
+  font-size: 3vw;
+  margin: -7vh 0px 0px 0px;
   text-align: center;
   font-family: "Old Standard TT", serif;
   font-weight: 400;
@@ -22,7 +22,8 @@ p#function {
 
 .profile {
   display: flex;
-  justify-content: center; /* Centraliza as colunas */
+  justify-content: center;
+  /* Centraliza as colunas */
   align-items: center;
   height: calc(100vh - 60px);
 }
@@ -33,7 +34,8 @@ p#function {
   align-items: self-start;
   justify-content: center;
   height: 100%;
-  margin-right: 20px; /* Ajuste o valor conforme necessário */
+  margin-right: 2vh;
+  /* Ajuste o valor conforme necessário */
 }
 
 .profile-logos {
@@ -41,34 +43,86 @@ p#function {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 3vw;
   height: 100%;
-  margin-left: 100px; /* Ajuste o valor conforme necessário */
-}
-
-#projects {
-  margin: 0px;
-  height: 100vh;
-  background-color: black;
+  margin-left: 100px;
+  flex-wrap: wrap;
+  /* Ajuste o valor conforme necessário */
 }
 
 #projButton {
-  font-size: 20px;
-  width: 300px;
-  height: 50px;
+  font-size: 1.5vw;
+  width: 18vw;
+  height: 3vw;
   border-radius: 0;
-  margin: 20px 0 0 0;
+  margin: 2vh 0 0 0;
   font-family: "Bebas Neue", sans-serif;
+  padding-top: 1.4vh;
   font-weight: 400;
   font-style: normal;
-}
-
-#navbarLogos {
   display: flex;
-  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  min-height: 4vh;
 }
 
 #logo {
   margin: 0 10px;
   cursor: pointer;
+}
+
+#projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  height: 100vh;
+  background-color: white;
+}
+
+#content {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+p#title {
+  font-size: 7vw;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+
+#repo {
+  font-size: 7vw;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 3vh;
+}
+
+.title-repo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1vh;
 }

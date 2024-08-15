@@ -31,7 +31,7 @@ const MyNavbar = () => {
     return (
         <Navbar expand="lg" className="bg-body-tertiary" id='navbar'>
             <Container fluid id='container'>
-                <Navbar.Brand href="#home" id="dateTime"></Navbar.Brand>
+                <Navbar.Brand id="dateTime"></Navbar.Brand>
 
             </Container>
         </Navbar>
