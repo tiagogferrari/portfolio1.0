@@ -23,7 +23,6 @@ p#function {
 .profile {
   display: flex;
   justify-content: center;
-  /* Centraliza as colunas */
   align-items: center;
   height: calc(100vh - 60px);
 }
@@ -35,7 +34,6 @@ p#function {
   justify-content: center;
   height: 100%;
   margin-right: 2vh;
-  /* Ajuste o valor conforme necessário */
 }
 
 .profile-logos {
@@ -47,7 +45,6 @@ p#function {
   height: 100%;
   margin-left: 100px;
   flex-wrap: wrap;
-  /* Ajuste o valor conforme necessário */
 }
 
 #projButton {
@@ -66,9 +63,23 @@ p#function {
   min-height: 4vh;
 }
 
+#projButton:hover {
+  transform: scale(1.02);
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  font-weight: 450;
+}
+
 #logo {
+  width: 40px;
+  height: 40px;
   margin: 0 10px;
   cursor: pointer;
+}
+
+#logo:hover {
+  transform: scale(1.05);
 }
 
 #projects {
@@ -87,6 +98,7 @@ p#function {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-top: 5px double black;
 }
 
 p#title {
@@ -119,10 +131,99 @@ p#title {
   margin-top: 3vh;
 }
 
+.pagination-container .pagination .page-item .page-link {
+  color: black;
+}
+
+.pagination-container .pagination .page-item.active .page-link {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+
 .title-repo-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   margin-bottom: 1vh;
+}
+
+#card {
+  height: 40vh;
+  width: 20rem;
+  margin: 0px 30px 0px 30px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 5px double black;
+  border-bottom: 5px double black;
+  border-radius: 0;
+  padding: 6px 4px 4px 6px;
+}
+
+#card:hover {
+  transform: scale(1.02);
+}
+
+#card .card-title {
+  font-size: 3vh;
+  font-family: "Old Standard TT", serif;
+  font-weight: 800;
+  font-style: normal;
+  padding-top: 1.4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px double black;
+}
+
+#card .card-technologies {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2vh;
+  padding-top: 1.4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px double black;
+  margin-bottom: 40px;
+}
+
+#card .card-description {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2vh;
+  padding-top: 1.4vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#card .card-link {
+  border-top: 3px double black;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  border: 2px solid black;
+  background-color: black;
+}
+
+#card .card-link:hover {
+  text-decoration: underline;
+}
+
+.backHome {
+  position: absolute; 
+  right: 40px; 
+  top: 190%;
+  margin: 10px;
+  cursor: pointer; 
 }

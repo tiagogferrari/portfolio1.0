@@ -5,7 +5,8 @@ import Button from 'react-bootstrap/Button';
 import gmailLogo from './assets/logos/gmail.png';
 import githubLogo from './assets/logos/github.png';
 import linkedinLogo from './assets/logos/linkedin.png';
-import whatsappLogo from './assets/logos/whatsapp.png';
+import whatsappLogo from './assets/logos/whatsapp.png'
+import seta from './assets/logos/seta.png';
 import Card from 'react-bootstrap/Card';
 import Pagination from 'react-bootstrap/Pagination';
 import { useState } from 'react';
@@ -17,12 +18,18 @@ function App() {
   const cardsPerPage = 3;
 
   const cards = [
-    { title: 'Projeto 1', subtitle: 'aaa', text: 'Descrição do Projeto 1' },
-    { title: 'Projeto 2', subtitle: 'aaa', text: 'Descrição do Projeto 2' },
-    { title: 'Projeto 3', subtitle: 'aaa', text: 'Descrição do Projeto 3' },
+    { title: 'SATISFYING.YOU', description: 'Aplicativo para pesquisas com clientes/usuários corporativos', technologies: 'React-Native | Firebase Authentication | Database e Storage ', link: 'https://github.com/tiagogferrari/SatisfyingYou-Mobile-' },
+    // { title: 'TÍTULO', description: 'DESCRIÇÃO', technologies: 'TECNOLOGIAS', link: 'aaa' },
+    // { title: 'TÍTULO', description: 'DESCRIÇÃO', technologies: 'TECNOLOGIAS', link: 'aaa' },
     // { title: 'Projeto 4', text: 'Descrição do Projeto 4' },
     // { title: 'Projeto 5', text: 'Descrição do Projeto 5' },
     // { title: 'Projeto 6', text: 'Descrição do Projeto 6' },
+    // { title: 'Projeto 7', text: 'Descrição do Projeto 7' },
+    // { title: 'Projeto ', text: 'Descrição do Projeto 8' },
+    // { title: 'Projeto 9', text: 'Descrição do Projeto 9' },
+    // { title: 'Projeto 10', text: 'Descrição do Projeto 10' },
+    // { title: 'Projeto 11', text: 'Descrição do Projeto 11' },
+    // { title: 'Projeto 12', text: 'Descrição do Projeto 12' },
   ];
 
   const indexOfLastCard = currentPage * cardsPerPage;
@@ -35,10 +42,14 @@ function App() {
     document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToProfile = () => {
+    document.getElementById('prof').scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <div className="App">
       <MyNavbar />
-      <div className="profile">
+      <div className="profile" id="prof">
         <div className="profile-info">
           <p id="name">TIAGO FERRARI</p>
           <p id="function">20 anos, Análise De Sistemas - UTFPR</p>
@@ -67,11 +78,12 @@ function App() {
           </div>
           <div className="card-container" id="cards">
             {currentCards.map((card, index) => (
-              <Card key={index} style={{ width: '18rem', margin: '10px' }}>
+              <Card key={index} id="card">
                 <Card.Body>
-                  <Card.Title>{card.title}</Card.Title>
-                  <Card.Text>{card.text}</Card.Text>
-                  <Card.Text>{card.subtitle}</Card.Text>
+                  <Card.Title className="card-title">{card.title}</Card.Title>
+                  <Card.Text className="card-description">{card.description}</Card.Text>
+                  <Card.Text className="card-technologies">{card.technologies}</Card.Text>
+                  <Card.Link className="card-link" href={card.link} target="_blank" rel="noopener noreferrer">REPOSITÓRIO</Card.Link>
                 </Card.Body>
               </Card>
             ))}
@@ -84,6 +96,9 @@ function App() {
                 </Pagination.Item>
               ))}
             </Pagination>
+          </div>
+          <div>
+            <img src={seta} alt='oi' id='logo' className="backHome" onClick={scrollToProfile}></img>
           </div>
         </div>
       </div>
