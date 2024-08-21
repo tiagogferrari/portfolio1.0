@@ -232,27 +232,27 @@ p#title {
 
 @media (max-width: 576px) {
   p#name {
-    font-size: 10vw; 
+    font-size: 10vw;
   }
 
   p#function {
-    font-size: 4vw; 
-    margin: -2vh 0px 0px 0px; 
-    
+    font-size: 4vw;
+    margin: -2vh 0px 0px 0px;
+
   }
 
   .profile {
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .profile-info {
-    align-items:center; 
+    align-items: center;
     margin-right: 0;
   }
 
   .profile-logos {
-    flex-direction: row; 
-    margin-left: 0; 
+    flex-direction: row;
+    margin-left: 0;
     margin-top: -50vh;
   }
 

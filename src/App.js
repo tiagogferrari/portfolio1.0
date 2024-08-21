@@ -37,21 +37,9 @@ function App() {
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
-  // const scrollToProjects = () => {
-  //     setTimeout(() => {
-  //       document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
-  //     }, 100);
-  // };
-
   const scrollToProjects = () => {
-    const element = document.getElementById('projects');
-    window.scrollTo({
-      top: element.offsetTop,
-      behavior: 'smooth',
-    });
+    document.getElementById("projects").scrollIntoView({ behavior: 'smooth' });
   };
-  
-
 
   const scrollToProfile = () => {
     document.getElementById('prof').scrollIntoView({ behavior: 'smooth' });
@@ -85,7 +73,6 @@ function App() {
         <div id="content">
           <div className="title-repo-container">
             <p id="title">PROJETOS</p>
-            {/* <a id="repo" href='https://github.com/tiagogferrari?tab=repositories' target="_blank" rel="noopener noreferrer">Repositórios</a> */}
           </div>
           <div className="card-container" id="cards">
             {currentCards.map((card, index) => (
