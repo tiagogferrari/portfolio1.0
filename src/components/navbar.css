@@ -8,6 +8,7 @@
     border-bottom: 5px double black;
     width: calc(100% - 60px); /* Deixa 20px de espaço em cada lado */
     margin: 0 auto;
+    justify-content: center ;
 }
 
 #container {
@@ -23,5 +24,13 @@
     font-family: "Old Standard TT", serif;
     font-weight: 700;
     font-style: normal;
+    font-size: 20px;
+    text-align: center; /* Centraliza o texto */
+    width: 100%;
 }
 
+@media (max-width: 576px) {
+    #dateTime {
+        font-size: 14px;
+    }
+}

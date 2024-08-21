@@ -13,7 +13,7 @@ p#name {
 
 p#function {
   font-size: 3vw;
-  margin: -7vh 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
   text-align: center;
   font-family: "Old Standard TT", serif;
   font-weight: 400;
@@ -221,9 +221,46 @@ p#title {
 }
 
 .backHome {
-  position: absolute; 
-  right: 40px; 
+  position: absolute;
+  right: 40px;
   top: 190%;
   margin: 10px;
-  cursor: pointer; 
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 576px) {
+  p#name {
+    font-size: 10vw; 
+  }
+
+  p#function {
+    font-size: 4vw; /* Ajusta o tamanho da fonte para dispositivos móveis */
+    margin: -2vh 0px 0px 0px; /* Ajusta a margem para dispositivos móveis */
+    
+  }
+
+  .profile {
+    flex-direction: column; /* Altera para coluna em dispositivos móveis */
+  }
+
+  .profile-info {
+    align-items:center; /* Centraliza os textos */
+    margin-right: 0; /* Remove a margem direita */
+  }
+
+  .profile-logos {
+    flex-direction: row; /* Altera para linha em dispositivos móveis */
+    margin-left: 0; /* Remove a margem esquerda */
+    margin-top: -50vh;
+  }
+
+  #projButton {
+    width: 20vw;
+    height: 4vw;
+    font-size: 5vw; /* Ajusta o tamanho do botão para dispositivos móveis */
+    width: 50vw; /* Ajusta a largura do botão para dispositivos móveis */
+    height: 6vw; /* Ajusta a altura do botão para dispositivos móveis */
+  }
 }
