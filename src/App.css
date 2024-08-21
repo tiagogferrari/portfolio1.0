@@ -236,31 +236,31 @@ p#title {
   }
 
   p#function {
-    font-size: 4vw; /* Ajusta o tamanho da fonte para dispositivos móveis */
-    margin: -2vh 0px 0px 0px; /* Ajusta a margem para dispositivos móveis */
+    font-size: 4vw; 
+    margin: -2vh 0px 0px 0px; 
     
   }
 
   .profile {
-    flex-direction: column; /* Altera para coluna em dispositivos móveis */
+    flex-direction: column; 
   }
 
   .profile-info {
-    align-items:center; /* Centraliza os textos */
-    margin-right: 0; /* Remove a margem direita */
+    align-items:center; 
+    margin-right: 0;
   }
 
   .profile-logos {
-    flex-direction: row; /* Altera para linha em dispositivos móveis */
-    margin-left: 0; /* Remove a margem esquerda */
+    flex-direction: row; 
+    margin-left: 0; 
     margin-top: -50vh;
   }
 
   #projButton {
     width: 20vw;
     height: 4vw;
-    font-size: 5vw; /* Ajusta o tamanho do botão para dispositivos móveis */
-    width: 50vw; /* Ajusta a largura do botão para dispositivos móveis */
-    height: 6vw; /* Ajusta a altura do botão para dispositivos móveis */
+    font-size: 5vw;
+    width: 50vw;
+    height: 6vw;
   }
 }

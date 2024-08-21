@@ -37,9 +37,21 @@ function App() {
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
+  // const scrollToProjects = () => {
+  //     setTimeout(() => {
+  //       document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+  //     }, 100);
+  // };
+
   const scrollToProjects = () => {
-    document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+    const element = document.getElementById('projects');
+    window.scrollTo({
+      top: element.offsetTop,
+      behavior: 'smooth',
+    });
   };
+  
+
 
   const scrollToProfile = () => {
     document.getElementById('prof').scrollIntoView({ behavior: 'smooth' });
